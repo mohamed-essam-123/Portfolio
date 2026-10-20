@@ -1,0 +1,608 @@
+<!DOCTYPE html> 
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Mohamed Essam | Full-Stack Developer Portfolio</title>
+    <meta name="description" content="Professional portfolio of Mohamed Essam, a Full-Stack Developer specializing in ASP.NET Core, C#, SQL Server, and React. Discover scalability, clean architecture, and modern UX design.">
+    <meta name="keywords" content="Mohamed Essam, Full-Stack Developer, .NET Developer, ASP.NET Core, C#, SQL Server, React Developer, Web Developer Portfolio, Egypt Developer">
+    <meta name="author" content="Mohamed Essam">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mohamedessamahmednailportfolio.netlify.app/">
+    <meta property="og:title" content="Mohamed Essam | Full-Stack Developer Portfolio">
+    <meta property="og:description" content="Explore the portfolio of Mohamed Essam, highlighting enterprise-grade .NET API designs, SQL databases, and responsive React applications.">
+    <meta property="og:image" content="me.png">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://mohamedessamahmednailportfolio.netlify.app/">
+    <meta property="twitter:title" content="Mohamed Essam | Full-Stack Developer Portfolio">
+    <meta property="twitter:description" content="Explore the portfolio of Mohamed Essam, highlighting enterprise-grade .NET API designs, SQL databases, and responsive React applications.">
+    <meta property="twitter:image" content="me.png">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Mohamed Essam",
+      "jobTitle": "Full-Stack Developer",
+      "url": "https://mohamedessamahmednailportfolio.netlify.app/",
+      "sameAs": [
+        "https://www.linkedin.com/in/mohamed-essam-04ab5a2b7",
+        "https://github.com/mohamed-essam-123"
+      ],
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Nahda University"
+      },
+      "knowsAbout": [
+        "ASP.NET Core",
+        "C#",
+        "SQL Server",
+        "React",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Model-View-Controller (MVC)",
+        "Database Design",
+        "Entity Framework Core"
+      ],
+      "gender": "Male"
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Outfit:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+
+    <div class="cursor-trail"></div>
+
+    <div class="scroll-progress-container">
+        <div class="scroll-progress"></div>
+    </div>
+
+    <div class="preloader">
+        <div class="loader-ripple">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">M.E<span class="logo-dot"></span></a>
+            
+            <button class="mobile-toggle" aria-label="Toggle Navigation Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active" data-i18n="nav_home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-i18n="nav_about">About</a></li>
+                <li><a href="#experience" class="nav-link" data-i18n="nav_experience">Experience</a></li>
+                <li><a href="#skills" class="nav-link" data-i18n="nav_skills">Skills</a></li>
+                <li><a href="#projects" class="nav-link" data-i18n="nav_projects">Projects</a></li>
+                <li><a href="#certificates" class="nav-link" data-i18n="nav_certificates">Certificates</a></li>
+                <li><a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button id="langBtn" class="lang-toggle" aria-label="Switch Language">
+                    <i class="fas fa-globe"></i>
+                    <span id="langText">العربية</span>
+                </button>
+                <button class="theme-toggle" aria-label="Toggle Theme Color Scheme">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-container">
+                <div class="hero-content" data-aos="fade-right">
+                    <div class="availability-badge">
+                        <span class="pulse-dot"></span>
+                        <span data-i18n="hero_badge">Available for Hire</span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        <span data-i18n="hero_title_prefix">Hi, I'm </span>
+                        <span class="typewriter-text" id="typewriter"></span>
+                    </h1>
+                    
+                    <p class="hero-desc" data-i18n="hero_desc">
+                        Computer Science student at Nahda University and a passionate Full-Stack Developer specializing in ASP.NET Core, C#, SQL Server, and React. I design and build highly scalable, secure, and user-friendly web solutions.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <a href="Mohamed Essam CV .pdf" download="Mohamed_Essam_CV.pdf" class="btn btn-primary">
+                            <i class="fas fa-download"></i>
+                            <span data-i18n="hero_btn_cv">Download CV</span>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span data-i18n="hero_btn_contact">Get In Touch</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="hero-socials">
+                        <a href="https://www.linkedin.com/in/mohamed-essam-04ab5a2b7" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Account"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/mohamed-essam-123" target="_blank" rel="noopener noreferrer" aria-label="GitHub Account"><i class="fab fa-github"></i></a>
+                        <a href="https://wa.me/201092833287" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Direct"><i class="fab fa-whatsapp"></i></a>
+                        <a href="mohamedessam010928@gmail.com" aria-label="Send Direct Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <div class="hero-graphic" data-aos="fade-left">
+                    <div class="profile-card">
+                        <div class="profile-glow"></div>
+                        <div class="avatar-frame">
+                            <img src="me.png" alt="Mohamed Essam Profile Photo" class="profile-avatar">
+                        </div>
+                        <h3 class="profile-name">Mohamed Essam</h3>
+                        <p class="profile-tag">Full-Stack .NET Developer</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section about" id="about">
+            <h2 class="section-title text-center" data-i18n="about_title">About Me</h2>
+            <div class="section-container">
+                <div class="about-grid">
+                    <div class="about-card story-card" data-aos="fade-up">
+                        <h3 class="card-headline" data-i18n="about_story_title">My Professional Story</h3>
+                        <p class="card-para" data-i18n="about_story_text">
+                            I'm a passionate Full-Stack .NET Developer focused on building modern and reliable web applications. I work with C#, ASP.NET Core, Entity Framework Core, and SQL Server to develop backend systems and RESTful APIs, while using React and modern frontend technologies to create responsive and user-friendly interfaces.
+                        </p>
+                        <p class="card-para" data-i18n="about_story_text_2">
+                            I care about writing clean, maintainable code, designing well-structured databases, and building applications that deliver a great user experience. I'm continuously developing my skills through practical projects and learning new technologies.
+                        </p>
+                        
+                        <h3 class="card-headline strengths-title" data-i18n="about_strengths_title">Core Strengths</h3>
+                        <ul class="strengths-list">
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="about_strength_1">Clean & Maintainable Architecture</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="about_strength_2">Relational Database Design & EF Core</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="about_strength_3">Modern Frontend Integration (React & JS)</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="about_strength_4">Effective Communication & Team Collaboration</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="about-stats-grid">
+                        <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="stat-icon"><i class="fas fa-code"></i></div>
+                            <h4 class="stat-number" data-i18n="about_stats_exp_num">2+ Years</h4>
+                            <p class="stat-label" data-i18n="about_stats_exp_text">Coding Experience</p>
+                        </div>
+                        <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="stat-icon"><i class="fas fa-laptop-code"></i></div>
+                            <h4 class="stat-number" data-i18n="about_stats_proj_num">15+ Done</h4>
+                            <p class="stat-label" data-i18n="about_stats_proj_text">Completed Projects</p>
+                        </div>
+                        <div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
+                            <div class="stat-icon"><i class="fas fa-smile"></i></div>
+                            <h4 class="stat-number" data-i18n="about_stats_client_num">99%</h4>
+                            <p class="stat-label" data-i18n="about_stats_client_text">Satisfaction Rate</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section experience" id="experience">
+            <h2 class="section-title text-center" data-i18n="exp_title">Experience & Education</h2>
+            <p class="section-subtitle text-center" data-i18n="exp_subtitle">My professional journey and academic timeline</p>
+            <div class="section-container">
+                <div class="timeline-container">
+                    <div class="timeline-line"></div>
+                    
+                    <div class="timeline-item left" data-aos="fade-right">
+                        <div class="timeline-marker"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="timeline-card">
+                            <span class="timeline-date" data-i18n="exp_edu_date">Oct 2023 - Jul 2027</span>
+                            <h3 class="timeline-headline" data-i18n="exp_edu_title">B.Sc. in Computer Science</h3>
+                            <h4 class="timeline-org" data-i18n="exp_edu_org">Nahda University in Beni Suef (NUB)</h4>
+                            <p class="timeline-desc" data-i18n="exp_edu_desc">Fourth Year student, specializing in Software Engineering and Database Systems.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item right" data-aos="fade-left">
+                        <div class="timeline-marker"><i class="fas fa-users"></i></div>
+                        <div class="timeline-card">
+                            <span class="timeline-date" data-i18n="exp_yly_date">Aug 2025 - Jun 2026</span>
+                            <h3 class="timeline-headline" data-i18n="exp_yly_title">Volunteer</h3>
+                            <h4 class="timeline-org" data-i18n="exp_yly_org">YLY Ministry of Youth and Sports</h4>
+                            <p class="timeline-desc" data-i18n="exp_yly_desc">High Committee Member: Managed large-scale events and thematic planning. Leader of Competing Team (Eureka) using dynamic problem-solving methodologies to execute events like "Code to Cash".</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item left" data-aos="fade-right">
+                        <div class="timeline-marker"><i class="fab fa-dotnet"></i></div>
+                        <div class="timeline-card">
+                            <span class="timeline-date" data-i18n="exp_route_date">Jul 2025 - Jan 2026</span>
+                            <h3 class="timeline-headline" data-i18n="exp_route_title">Back-End ASP.NET Trainee</h3>
+                            <h4 class="timeline-org" data-i18n="exp_route_org">Route Academy</h4>
+                            <p class="timeline-desc" data-i18n="exp_route_desc">Developed scalable RESTful APIs using ASP.NET Core and C# following Clean Architecture principles. Optimized database performance using SQL Server, EF Core, and secure JWT Identity systems.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item right" data-aos="fade-left">
+                        <div class="timeline-marker"><i class="fas fa-hands-helping"></i></div>
+                        <div class="timeline-card">
+                            <span class="timeline-date" data-i18n="exp_ieee_vol_date">Nov 2025 - Jun 2026</span>
+                            <h3 class="timeline-headline" data-i18n="exp_ieee_vol_title">IEEE Student Activity Volunteer</h3>
+                            <h4 class="timeline-org" data-i18n="exp_ieee_vol_org">IEEE Fayoum Student Activity</h4>
+                            <p class="timeline-desc" data-i18n="exp_ieee_vol_desc">Participated in technical events and workshops. Worked in team-based academic and organizational activities to build professional communication skills.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item left" data-aos="fade-right">
+                        <div class="timeline-marker"><i class="fas fa-laptop-code"></i></div>
+                        <div class="timeline-card">
+                            <span class="timeline-date" data-i18n="exp_depi_date">Aug 2026 - Jan 2027</span>
+                            <h3 class="timeline-headline" data-i18n="exp_depi_title">Full-Stack .NET Trainee</h3>
+                            <h4 class="timeline-org" data-i18n="exp_depi_org">Digital Egypt Pioneers Initiative (DEPI)</h4>
+                            <p class="timeline-desc" data-i18n="exp_depi_desc">Full-Stack .NET track covering C# and OOP, SQL Server, ASP.NET Core (MVC & Web API), Entity Framework Core, and React. Built hands-on projects using Git/GitHub for version control.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item right" data-aos="fade-left">
+                        <div class="timeline-marker"><i class="fab fa-react"></i></div>
+                        <div class="timeline-card">
+                            <span class="timeline-date" data-i18n="exp_self_date">Jan 2024 - 2025</span>
+                            <h3 class="timeline-headline" data-i18n="exp_self_title">Front-End Development</h3>
+                            <h4 class="timeline-org" data-i18n="exp_self_org">Self-Learning & Projects</h4>
+                            <p class="timeline-desc" data-i18n="exp_self_desc">Built responsive and interactive web applications using HTML5, CSS3, JavaScript, and React.js. Created reusable components and integrated REST APIs with Git/GitHub for version control.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="section skills" id="skills">
+            <h2 class="section-title text-center" data-i18n="skills_title">Skills & Technologies</h2>
+            <p class="section-subtitle text-center" data-i18n="skills_subtitle">Technologies I use to build scalable web architectures</p>
+            <div class="section-container">
+                <div class="skills-grid-container">
+                    
+                    <div class="skills-category-card" data-aos="fade-up">
+                        <div class="category-header">
+                            <div class="category-icon"><i class="fab fa-react"></i></div>
+                            <h3 data-i18n="skills_cat_frontend">Front-End</h3>
+                        </div>
+                        <div class="skills-pills-list">
+                            <span class="skill-pill">React.js</span>
+                            <span class="skill-pill">JavaScript (ES6+)</span>
+                            <span class="skill-pill">HTML5</span>
+                            <span class="skill-pill">CSS3</span>
+                            <span class="skill-pill">Tailwind CSS</span>
+                            <span class="skill-pill">Responsive Design</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-category-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="category-header">
+                            <div class="category-icon"><i class="fab fa-dotnet"></i></div>
+                            <h3 data-i18n="skills_cat_backend">Back-End</h3>
+                        </div>
+                        <div class="skills-pills-list">
+                            <span class="skill-pill">C#</span>
+                            <span class="skill-pill">ASP.NET Core</span>
+                            <span class="skill-pill">ASP.NET MVC</span>
+                            <span class="skill-pill">Web API / RESTful</span>
+                            <span class="skill-pill">Entity Framework Core</span>
+                            <span class="skill-pill">Clean Architecture</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-category-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="category-header">
+                            <div class="category-icon"><i class="fas fa-database"></i></div>
+                            <h3 data-i18n="skills_cat_database">Databases</h3>
+                        </div>
+                        <div class="skills-pills-list">
+                            <span class="skill-pill">SQL Server</span>
+                            <span class="skill-pill">T-SQL</span>
+                            <span class="skill-pill">Database Design</span>
+                            <span class="skill-pill">Query Optimization</span>
+                            <span class="skill-pill">EF Migrations</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-category-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="category-header">
+                            <div class="category-icon"><i class="fas fa-tools"></i></div>
+                            <h3 data-i18n="skills_cat_tools">Tools & DevOps</h3>
+                        </div>
+                        <div class="skills-pills-list">
+                            <span class="skill-pill">Git</span>
+                            <span class="skill-pill">GitHub</span>
+                            <span class="skill-pill">Visual Studio</span>
+                            <span class="skill-pill">VS Code</span>
+                            <span class="skill-pill">IIS Hosting</span>
+                            <span class="skill-pill">Postman API Testing</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-category-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="category-header">
+                            <div class="category-icon"><i class="fas fa-users"></i></div>
+                            <h3 data-i18n="skills_cat_soft">Soft Skills</h3>
+                        </div>
+                        <div class="skills-pills-list">
+                            <span class="skill-pill" data-i18n="about_strength_4">Effective Communication & Team Collaboration</span>
+                            <span class="skill-pill">Problem Solving</span>
+                            <span class="skill-pill">Continuous Learning</span>
+                            <span class="skill-pill">Adaptability</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section projects" id="projects">
+            <h2 class="section-title text-center" data-i18n="proj_title">Featured Projects</h2>
+            <p class="section-subtitle text-center" data-i18n="proj_subtitle">A showcase of engineering excellence, design principles, and problem solving</p>
+            <div class="section-container">
+                <div class="projects-filter-bar" data-aos="fade-up">
+                    <button class="filter-btn active" data-filter="all" data-i18n="proj_filter_all">All</button>
+                    <button class="filter-btn" data-filter="fullstack" data-i18n="proj_filter_fs">Full-Stack (.NET)</button>
+                    <button class="filter-btn" data-filter="frontend" data-i18n="proj_filter_fe">Front-End (React)</button>
+                    <button class="filter-btn" data-filter="ui-ux" data-i18n="proj_filter_ui">UI/UX & Animations</button>
+                </div>
+
+                <div class="projects-grid"></div>
+            </div>
+        </section>
+
+        <section class="section certificates" id="certificates">
+            <h2 class="section-title text-center" data-i18n="cert_title">Certificates & Achievements</h2>
+            <p class="section-subtitle text-center" data-i18n="cert_subtitle">Verifications of technical training, languages, and internships</p>
+            <div class="section-container">
+                <div class="certificates-grid">
+                    
+                    <div class="cert-card-wrapper" data-aos="zoom-in" onclick="openCertModal('php.jpeg', 'cert_desc_php', '#')">
+                        <div class="cert-card-ui">
+                            <img src="php.jpeg" alt="PHP Certificate" class="cert-preview-img" loading="lazy">
+                            <div class="cert-card-overlay">
+                                <span class="cert-icon"><i class="fas fa-search-plus"></i></span>
+                                <p class="cert-desc" data-i18n="cert_desc_php">PHP Web Development Training - ITI</p>
+                                <span class="cert-action" data-i18n="cert_click_hint">Click to preview</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cert-card-wrapper" data-aos="zoom-in" data-aos-delay="100" onclick="openCertModal('cirtificate .jpeg', 'cert_desc_soft', '#')">
+                        <div class="cert-card-ui">
+                            <img src="cirtificate .jpeg" alt="Soft Skills Certificate" class="cert-preview-img" loading="lazy">
+                            <div class="cert-card-overlay">
+                                <span class="cert-icon"><i class="fas fa-search-plus"></i></span>
+                                <p class="cert-desc" data-i18n="cert_desc_soft">Professional Soft Skills </p>
+                                <span class="cert-action" data-i18n="cert_click_hint">Click to preview</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cert-card-wrapper" data-aos="zoom-in" data-aos-delay="200" onclick="openCertModal('ASP.Net Route.jpeg', 'cert_desc_route', '#')">
+                        <div class="cert-card-ui">
+                            <img src="ASP.Net Route.jpeg" alt="Back-End ASP.NET Certificate from Route Academy" class="cert-preview-img" loading="lazy">
+                            <div class="cert-card-overlay">
+                                <span class="cert-icon"><i class="fas fa-search-plus"></i></span>
+                                <p class="cert-desc" data-i18n="cert_desc_route">Back-End ASP.NET Certificate - Route Academy</p>
+                                <span class="cert-action" data-i18n="cert_click_hint">Click to preview</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cert-card-wrapper" data-aos="zoom-in" data-aos-delay="300" onclick="openCertModal('cib.jpeg', 'cert_desc_cib', '#')">
+                        <div class="cert-card-ui">
+                            <img src="cib.jpeg" alt="CIB Internship" class="cert-preview-img" loading="lazy">
+                            <div class="cert-card-overlay">
+                                <span class="cert-icon"><i class="fas fa-search-plus"></i></span>
+                                <p class="cert-desc" data-i18n="cert_desc_cib">Financial Tech Internship - CIB</p>
+                                <span class="cert-action" data-i18n="cert_click_hint">Click to preview</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cert-card-wrapper" data-aos="zoom-in" data-aos-delay="400" onclick="openCertModal('Iti (php).jpg', 'cert_desc_iti', '#')">
+                        <div class="cert-card-ui">
+                            <img src="Iti (php).jpg" alt="ITI Open Source" class="cert-preview-img" loading="lazy">
+                            <div class="cert-card-overlay">
+                                <span class="cert-icon"><i class="fas fa-search-plus"></i></span>
+                                <p class="cert-desc" data-i18n="cert_desc_iti">Web Technologies Track - ITI</p>
+                                <span class="cert-action" data-i18n="cert_click_hint">Click to preview</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cert-card-wrapper" data-aos="zoom-in" data-aos-delay="500" onclick="openCertModal('IEEE.png', 'cert_desc_ieee', '#')">
+                        <div class="cert-card-ui">
+                            <img src="IEEE.png" alt="IEEE Certificate" class="cert-preview-img" loading="lazy">
+                            <div class="cert-card-overlay">
+                                <span class="cert-icon"><i class="fas fa-search-plus"></i></span>
+                                <p class="cert-desc" data-i18n="cert_desc_ieee">IEEE FSB - Certificate of Appreciation (Project Management Committee)</p>
+                                <span class="cert-action" data-i18n="cert_click_hint">Click to preview</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section journey" id="journey">
+            <h2 class="section-title text-center" data-i18n="journey_title">My Journey</h2>
+            <p class="section-subtitle text-center" data-i18n="journey_subtitle">From Learning to Building Real-World Applications</p>
+            <div class="section-container">
+                <ol class="journey-track">
+                    <li class="journey-step" data-aos="fade-up" data-aos-delay="0">
+                        <span class="journey-badge" aria-hidden="true"><i class="fas fa-graduation-cap"></i></span>
+                        <div class="journey-card">
+                            <span class="journey-number" aria-hidden="true">01</span>
+                            <span class="journey-label" data-i18n="journey_1_label">The Beginning</span>
+                            <h3 class="journey-heading" data-i18n="journey_1_title">Building My Foundation</h3>
+                            <p class="journey-desc" data-i18n="journey_1_desc">I started my journey studying Computer Science, learning programming fundamentals, problem solving, and OOP concepts, and building a strong foundation in software development.</p>
+                        </div>
+                    </li>
+                    <li class="journey-step" data-aos="fade-up" data-aos-delay="100">
+                        <span class="journey-badge" aria-hidden="true"><i class="fas fa-code"></i></span>
+                        <div class="journey-card">
+                            <span class="journey-number" aria-hidden="true">02</span>
+                            <span class="journey-label" data-i18n="journey_2_label">Becoming a Developer</span>
+                            <h3 class="journey-heading" data-i18n="journey_2_title">Exploring Full-Stack Development</h3>
+                            <p class="journey-desc" data-i18n="journey_2_desc">I began learning full-stack web development, from building user interfaces with HTML, CSS, JavaScript, and React to developing backends with C# and ASP.NET Core and working with databases.</p>
+                        </div>
+                    </li>
+                    <li class="journey-step" data-aos="fade-up" data-aos-delay="200">
+                        <span class="journey-badge" aria-hidden="true"><i class="fas fa-rocket"></i></span>
+                        <div class="journey-card">
+                            <span class="journey-number" aria-hidden="true">03</span>
+                            <span class="journey-label" data-i18n="journey_3_label">Building Real Projects</span>
+                            <h3 class="journey-heading" data-i18n="journey_3_title">Turning Ideas Into Applications</h3>
+                            <p class="journey-desc" data-i18n="journey_3_desc">I started applying what I learned in real projects: building web applications and RESTful APIs, connecting frontends to backends, and designing databases with SQL Server and Entity Framework Core.</p>
+                        </div>
+                    </li>
+                    <li class="journey-step" data-aos="fade-up" data-aos-delay="300">
+                        <span class="journey-badge" aria-hidden="true"><i class="fas fa-chart-line"></i></span>
+                        <div class="journey-card">
+                            <span class="journey-number" aria-hidden="true">04</span>
+                            <span class="journey-label" data-i18n="journey_4_label">Growing Every Day</span>
+                            <h3 class="journey-heading" data-i18n="journey_4_title">Learning, Building &amp; Improving</h3>
+                            <p class="journey-desc" data-i18n="journey_4_desc">I keep improving my full-stack skills and code quality, and learning best practices for building modern, scalable web applications with a great user experience and reliable performance.</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="section contact" id="contact">
+            <h2 class="section-title text-center" data-i18n="contact_title">Let's Build Something Great</h2>
+            <p class="section-subtitle text-center" data-i18n="contact_subtitle">Get in touch for partnerships, job opportunities, or freelance inquiries</p>
+            
+            <div class="section-container">
+                <div class="contact-grid">
+                    <div class="contact-info" data-aos="fade-right">
+                        <h3 class="contact-info-title" data-i18n="contact_info_title">Direct Contact Details</h3>
+                        <p class="contact-info-subtitle" data-i18n="contact_info_sub">Prefer email, phone, or instant messaging? Reach out below.</p>
+                        
+                        <div class="contact-channels-list">
+                            <a href="https://wa.me/201092833287" target="_blank" rel="noopener noreferrer" class="contact-channel-card">
+                                <div class="channel-icon"><i class="fab fa-whatsapp"></i></div>
+                                <div class="channel-body">
+                                    <h4>WhatsApp</h4>
+                                    <p data-i18n="contact_info_whatsapp_desc">Quick Chat & Inquiries</p>
+                                </div>
+                            </a>
+                            <a href="https://www.linkedin.com/in/mohamed-essam-04ab5a2b7" target="_blank" rel="noopener noreferrer" class="contact-channel-card">
+                                <div class="channel-icon"><i class="fab fa-linkedin-in"></i></div>
+                                <div class="channel-body">
+                                    <h4>LinkedIn</h4>
+                                    <p data-i18n="contact_info_linkedin_desc">Professional Network</p>
+                                </div>
+                            </a>
+                            <a href="https://github.com/mohamed-essam-123" target="_blank" rel="noopener noreferrer" class="contact-channel-card">
+                                <div class="channel-icon"><i class="fab fa-github"></i></div>
+                                <div class="channel-body">
+                                    <h4>GitHub</h4>
+                                    <p data-i18n="contact_info_github_desc">Code repositories</p>
+                                </div>
+                            </a>
+                            <a href="mailto:mohamedessam010928@gmail.com" class="contact-channel-card">
+                                <div class="channel-icon"><i class="fas fa-envelope"></i></div>
+                                <div class="channel-body">
+                                    <h4>Email</h4>
+                                    <p data-i18n="contact_info_email_desc">mohamedessam010928@gmail.com</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper" data-aos="fade-left">
+                        <form id="contactForm" class="contact-form" novalidate>
+                            <div id="contactFormAlert" class="contact-alert" style="display: none;"></div>
+                            <div class="form-row-2">
+                                <div class="form-group">
+                                    <label for="contactName" data-i18n="contact_label_name">Full Name</label>
+                                    <input type="text" id="contactName" name="name" required placeholder="John Doe">
+                                </div>
+                                <div class="form-group">
+                                    <label for="contactEmail" data-i18n="contact_label_email">Email Address</label>
+                                    <input type="email" id="contactEmail" name="email" required placeholder="john@example.com">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactSubject" data-i18n="contact_label_subject">Subject</label>
+                                <input type="text" id="contactSubject" name="subject" required placeholder="Project Proposal">
+                            </div>
+                            <div class="form-group">
+                                <label for="contactMessage" data-i18n="contact_label_message">Message Details</label>
+                                <textarea id="contactMessage" name="message" rows="6" required placeholder="Hello Mohamed..."></textarea>
+                            </div>
+                            <button type="submit" id="contactSubmitBtn" class="btn btn-primary w-full">
+                                <i class="fas fa-paper-plane"></i>
+                                <span id="contactSubmitText" data-i18n="contact_btn_send">Send Message</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="copyright">&copy; 2026 Mohamed Essam. All Rights Reserved. Fully Optimized Bilingual Web Application.</p>
+        </div>
+    </footer>
+
+    <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <div id="caseStudyModal" class="modal-backdrop" role="dialog" aria-modal="true">
+        <div class="modal-container scrollable">
+            <button class="modal-close-btn" onclick="closeCaseStudy()" aria-label="Close modal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div id="caseStudyModalBody"></div>
+        </div>
+    </div>
+
+    <div id="certModal" class="modal-backdrop" role="dialog" aria-modal="true">
+        <div class="modal-container cert-modal-width">
+            <button class="modal-close-btn" onclick="closeCertModal()" aria-label="Close modal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="cert-modal-body">
+                <h3 id="certModalTitle" class="cert-modal-title">Certificate</h3>
+                <div class="cert-modal-img-container">
+                    <img id="certModalImg" src="" alt="Certificate visual preview">
+                </div>
+                <div class="cert-modal-actions text-center">
+                    <a id="certVerifyBtn" href="" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        <i class="fas fa-check-double"></i> <span data-i18n="cert_modal_verify">Verify Certificate</span>
+                    </a>
+                    <button class="btn btn-secondary" onclick="closeCertModal()" data-i18n="modal_close">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

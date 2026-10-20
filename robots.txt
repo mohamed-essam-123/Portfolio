@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mohamedessamahmednailportfolio.netlify.app/sitemap.xml
